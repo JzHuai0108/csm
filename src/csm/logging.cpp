@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <assert.h>
 
-#include "logging.h"
-#include "csm_all.h"
-#include "utils.h"
+#include "csm/logging.h"
+#include "csm/csm_all.h"
+#include "csm/utils.h"
 
 
 int sm_debug_write_flag = 0;

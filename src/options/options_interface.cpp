@@ -8,7 +8,7 @@
 #endif
 
 #include <string.h>
-#include "options.h"
+#include "csm/options/options.h"
 
 /** User-friendly interface */
 

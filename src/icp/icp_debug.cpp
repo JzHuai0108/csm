@@ -1,5 +1,5 @@
 #include <string.h>
-#include "icp.h"
+#include "csm/icp/icp.h"
 #include <vector>
 
 void debug_correspondences(struct sm_params * params) {

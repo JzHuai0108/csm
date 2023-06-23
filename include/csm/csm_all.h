@@ -1,7 +1,7 @@
 #ifndef H_CSM_ALL
 #define H_CSM_ALL
 
-#include <csm/csm.h>
+#include "csm/csm.h"
 
 #ifdef __cplusplus
 namespace CSM {}
@@ -9,7 +9,7 @@ namespace CSM {}
 #endif
 
 //#include "json_journal.h"
-#include "logging.h"
+#include "csm/logging.h"
 #include "math_utils.h"
 #include "math_utils_gsl.h"
 

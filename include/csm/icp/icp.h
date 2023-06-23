@@ -3,7 +3,7 @@
 
 //#include <gpc/gpc.h>
 
-#include <csm/csm_all.h>
+#include "csm/csm_all.h"
 
 /** This sets the stage.  */
 void sm_icp(struct sm_params*params, struct sm_result*res);

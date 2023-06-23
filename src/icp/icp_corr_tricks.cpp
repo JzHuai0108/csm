@@ -1,8 +1,8 @@
 //#include <gsl/gsl_vector.h>
-#include <gsl_eigen/gsl_eigen.h>
+#include "csm/gsl_eigen/gsl_eigen.h"
 
-#include "icp.h"
-#include "../csm/csm_all.h"
+#include "csm/icp/icp.h"
+#include "csm/csm_all.h"
 
 /** This is very close (but *less* than) to sin(x), for 
     x in (0, PI/2). It's a 5� degree taylor expansion. */

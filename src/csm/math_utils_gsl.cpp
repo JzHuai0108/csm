@@ -1,4 +1,4 @@
-#include "csm_all.h"
+#include "csm/csm_all.h"
 
 //void transform(const gsl_vector* p, const gsl_vector* x, gsl_vector*res) {
 //	double theta = gvg(x,2);

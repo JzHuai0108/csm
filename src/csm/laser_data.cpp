@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "csm_all.h"
+#include "csm/csm_all.h"
 
 double* alloc_double_array(int n, double def);
 int* alloc_int_array(int n, int def);

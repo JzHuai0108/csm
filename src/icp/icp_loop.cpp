@@ -2,13 +2,13 @@
 #include <string.h>
 
 //#include <gsl/gsl_matrix.h>
-#include <gsl_eigen/gsl_eigen.h>
-#include <gpc/gpc.h>
-#include <egsl/egsl_macros.h>
+#include "csm/gsl_eigen/gsl_eigen.h"
+#include "csm/gpc/gpc.h"
+#include "csm/egsl/egsl_macros.h"
 
-#include "../csm/csm_all.h"
+#include "csm/csm_all.h"
 
-#include "icp.h"
+#include "csm/icp/icp.h"
 #include <vector>
 
 int icp_loop(struct sm_params*params, const double*q0, double*x_new, 

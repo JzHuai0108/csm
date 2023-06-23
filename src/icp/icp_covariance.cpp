@@ -1,8 +1,8 @@
 #include <math.h>
-#include <egsl/egsl_macros.h>
+#include "csm/egsl/egsl_macros.h"
 
-#include "icp.h"
-#include "../csm/csm_all.h"
+#include "csm/icp/icp.h"
+#include "csm/csm_all.h"
 
 
 val compute_C_k(val p_j1, val p_j2);

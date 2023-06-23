@@ -3,7 +3,7 @@
 //#include <gsl/gsl_linalg.h>
 //#include <gsl/gsl_eigen.h>
 
-#include "egsl.h"
+#include "csm/egsl/egsl.h"
 
 
 

@@ -12,7 +12,7 @@ endif()
 
 find_package(Eigen3 REQUIRED)
 
-include_directories(include src ${EIGEN3_INCLUDE_DIR})
+include_directories(include ${EIGEN3_INCLUDE_DIR})
 
 set(CSM_SRC 
   src/csm/laser_data.cpp
@@ -47,6 +47,13 @@ set(OPTIONS_SRC
    src/options/options.cpp
    src/options/options_interface.cpp)
 
+find_package(catkin REQUIRED)
+catkin_package(
+    INCLUDE_DIRS include
+    LIBRARIES csm
+    CATKIN_DEPENDS
+)
+
 add_library(${PROJECT_NAME}
   ${CSM_SRC}
   ${EGSL_SRC} 
@@ -61,14 +68,12 @@ add_library(${PROJECT_NAME}-static STATIC
   ${ICP_SRC}
   ${OPTIONS_SRC})
 
-install(TARGETS ${PROJECT_NAME}
-                ${PROJECT_NAME}-static 
-        ARCHIVE DESTINATION lib
-        LIBRARY DESTINATION lib)
-install(DIRECTORY include/ DESTINATION include)
-install(FILES package.xml DESTINATION share/csm)
 
-# pkg-config
-set(PKG_CONFIG_C_FLAGS "-I${EIGEN3_INCLUDE_DIR}")
-configure_file(pkg-config/csm.pc.in ${CMAKE_CURRENT_BINARY_DIR}/csm.pc @ONLY)
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/csm.pc DESTINATION lib/pkgconfig)
+install(FILES package.xml DESTINATION share/csm)
+install(DIRECTORY include/csm/
+    DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION})
+
+install(TARGETS ${PROJECT_NAME}
+    ${PROJECT_NAME}-static
+ARCHIVE DESTINATION lib
+LIBRARY DESTINATION lib)

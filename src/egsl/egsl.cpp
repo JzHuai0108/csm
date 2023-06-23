@@ -7,8 +7,8 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "egsl.h"
-#include "egsl_imp.h"
+#include "csm/egsl/egsl.h"
+#include "csm/egsl/egsl_imp.h"
 #define MAX_VALS 1024
 #define MAX_CONTEXTS 1024
 

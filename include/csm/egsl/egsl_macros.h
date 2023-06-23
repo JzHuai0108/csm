@@ -1,7 +1,7 @@
 #ifndef H_EGSL_MACROS
 #define H_EGSL_MACROS
 
-#include "egsl.h"
+#include "csm/egsl/egsl.h"
 
 #define atv(v,i)         egsl_atv(v,i)
 #define atm(v,i,j)       egsl_atm(v,i,j)

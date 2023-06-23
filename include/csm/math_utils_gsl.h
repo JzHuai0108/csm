@@ -2,9 +2,9 @@
 #define H_MATH_UTILS_GSL
 
 //#include <gsl/gsl_math.h>
-#include <egsl/egsl.h>
+#include "csm/egsl/egsl.h"
 
-#include <csm/laser_data.h>
+#include "csm/laser_data.h"
 
 #define gvg gsl_vector_get
 #define gvs gsl_vector_set

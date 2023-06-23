@@ -1,8 +1,8 @@
 #include <string.h>
 #include <errno.h>
 
-#include "utils.h"
-#include "csm_all.h"
+#include "csm/utils.h"
+#include "csm/csm_all.h"
 
 
 /** Wraps around fopen and provides error message. */

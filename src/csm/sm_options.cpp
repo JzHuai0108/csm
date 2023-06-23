@@ -1,4 +1,4 @@
-#include "sm_options.h"
+#include "csm/sm_options.h"
 
 void sm_options(struct sm_params*p, struct option*ops) {
 	

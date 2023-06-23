@@ -23,10 +23,11 @@
   <maintainer email="130s@2000.jukuin.keio.ac.jp">Isaac I.Y. Saito</maintainer>
 
   <buildtool_depend>cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>eigen</build_depend>
   
   <export>
-    <build_type>cmake</build_type>
+    <build_type>catkin</build_type>
   </export>
 </package>

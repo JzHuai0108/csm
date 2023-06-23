@@ -1,6 +1,6 @@
 #include <math.h>
 
-#include "icp.h"
+#include "csm/icp/icp.h"
 #include <vector>
 
 void quicksort(std::vector<double>& array, int begin, int end);

@@ -1,7 +1,7 @@
 #include <assert.h>
 //#include <gsl/gsl_nan.h>
 
-#include "csm_all.h"
+#include "csm/csm_all.h"
 
 int minmax(int from, int to, int x) {
 	return (std::max)((std::min)(x,to),from);
