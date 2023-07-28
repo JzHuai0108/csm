@@ -83,6 +83,10 @@ typedef struct laser_data* LDP;
 /** This returns a new structure, with all fields initialized */
 LDP ld_alloc_new(int nrays);
 
+double* alloc_double_array(int n, double def);
+
+int* alloc_int_array(int n, int def);
+
 /** This DOES free() the pointer  */
 void ld_free(LDP);
 
